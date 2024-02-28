@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Used to present a similar page on mobile devices-->
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="glm.jpg">
+    <title>GlamorÉvents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/dc0929a05e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" title="Home" id="logo">GlamorÉvents</a>
+        <div class="search_bar">
+            <input type="text" id="search_text" name="searchb" placeholder="Search...">
+            <a href="#" class="search_icon"> <i class="fa-solid fa-magnifying-glass" onclick="showSearchBar()"></i> </a> 
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="showServices()">Services <i class="fa-solid fa-chevron-down" id="chevron_icon"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="wedding.html">Weddings</a>
+                        <a href="corporate.html">Corporate Events</a>
+                        <a href="private.html">Private Parties</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signIn.html" class="nav-link">Sign In</a></li>
+            <li><a href="join.html" class="nav-link">Join</a></li>
+            <li class="hamburger-icon" id="menu_icon" onclick="closeSideBar()">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+        </ul>
+        <div class="hamburger-icon_2" id="menu_icon_2" onclick="showSideBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>      
+    <hr>
+    <div class="search_bar2">
+        <input type="text" id="search_text2" name="searchb" placeholder="Search...">
+        <a href="#" class="search_icon2"> <i class="fa-solid fa-magnifying-glass"></i></a> 
+    </div>
+    <div class="corporate_body1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NJZTriv85_E?si=G1Rq5Dyt7K3HRE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="corporate_body2">
+        <div class="corporate_body2_content">
+            <h1>Elevate your next corporate event with GlamorÉvents.</h1>
+            <p>We transform vision into reality, crafting unforgettable experiences that empower your business.</p>
+            <a href="contact.html">Contact Us Now</a>
+        </div>
+    </div>
+    <hr>
+    <footer class="foot">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>Email: sokeipirimmacdonald@gmail.com</p>
+            <p>Phone: </p>
+            <p>Address: Nigeria</p>
+            <p>Follow Us:</p>
+            <p>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

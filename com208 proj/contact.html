@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Used to present a similar page on mobile devices-->
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="glm.jpg">
+    <title>GlamorÉvents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/dc0929a05e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" title="Home" id="logo">GlamorÉvents</a>
+        <div class="search_bar">
+            <input type="text" id="search_text" name="searchb" placeholder="Search...">
+            <a href="#" class="search_icon"> <i class="fa-solid fa-magnifying-glass" onclick="showSearchBar()"></i> </a> 
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="showServices()">Services <i class="fa-solid fa-chevron-down" id="chevron_icon"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="wedding.html">Weddings</a>
+                        <a href="contact.html">Corporate Events</a>
+                        <a href="private.html">Private Parties</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signIn.html" class="nav-link">Sign In</a></li>
+            <li><a href="join.html" class="nav-link">Join</a></li>
+            <li class="hamburger-icon" id="menu_icon" onclick="closeSideBar()">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+        </ul>
+        <div class="hamburger-icon_2" id="menu_icon_2" onclick="showSideBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>      
+    <hr>
+    <div class="search_bar2">
+        <input type="text" id="search_text2" name="searchb" placeholder="Search...">
+        <a href="#" class="search_icon2"> <i class="fa-solid fa-magnifying-glass"></i></a> 
+    </div>
+    <div class="contact_us_container">
+        <h1 class="contact_head1">Contact Us</h1>
+        <div class="business_hours">
+            <div class="business_hours_content">
+                <h2>Business Hours - UTC</h2>
+                <p>Monday: 8:00 AM - 5:00 PM</p>
+                <p>Tuesday: 7:00 AM - 5:00 PM</p>
+                <p>Wednesday: 9:00 AM - 6:00 PM</p>
+                <p>Thursday: 8:00 AM - 5:00 PM</p>
+                <p>Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bhimg">
+        </div>
+        <div class="contact_info">
+            <h2>Reach out to us using the methods below:</h2>
+            <ul>
+                <li>
+                    <a href="#" class="contact_link">Email: sokeipirimmacdonald@gmail.com</a>
+                </li>
+                <li>
+                    <a href="#" class="contact_link">Phone: </a>
+                </li>
+                <li>
+                    <a href="#" class="contact_link">Social Media: </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="feedback_form">
+            <h2 class="contact_subheading">Send Us Feedback</h2>
+            <form>
+                <div class="form_group">
+                    <label for="form_group_name">Name:</label>
+                    <input type="text" id="form_group_name" name="form_group_name" required>
+                </div>
+                <div class="form_group">
+                    <label for="form_group_email">Email:</label>
+                    <input type="email" id="form_group_email" name="form_group_email" required>
+                </div>
+                <div class="form_group">
+                    <label for="form_group_subject">Subject:</label>
+                    <input type="text" id="form_group_subject" name="form_group_subject" required>
+                </div>
+                <div class="form_group">
+                    <label for="form_group_message">Message:</label>
+                    <textarea id="form_group_message" name="form_group_message" required></textarea>
+                </div>
+                <button class="form_group_button">Send Feedback</button>
+            </form>
+        </div>
+      
+        <div class="faqs">
+            <h2 class="contact_subheading">Frequently Asked Questions</h2>
+            <ul>
+                <li>
+                    <p class="faq1" onclick="showFAQans1()"><i>How long did it take you to make this website?</i> <i class="fa-solid fa-plus" id="plus_sign1"></i></p>
+                    <hr>
+                    <p id="faq_ans1"><strong>Over 2 months.</strong></p>
+                </li>
+                <li>
+                    <p class="faq2" onclick="showFAQans2()"><i>Are you proud of this website?</i> <i class="fa-solid fa-plus" id="plus_sign2"></i></p>
+                    <hr>
+                    <p id="faq_ans2"><strong>It's an amazing start but I know there's so much more to do.</strong></p>
+                </li>
+                <li>
+                    <p class="faq3" onclick="showFAQans3()"><i>What's your next move?</i> <i class="fa-solid fa-plus" id="plus_sign3"></i></p>
+                    <hr>
+                    <p id="faq_ans3"><strong>I'm hoping I get a good score and I'm able to continue web dev</strong></p>
+                </li>
+                <li>
+                    <p class="faq4" onclick="showFAQans4()"><i>What are your goals?</i> <i class="fa-solid fa-plus" id="plus_sign4"></i></p>
+                    <hr>
+                    <p id="faq_ans4"><strong>Wait and see!</strong></p>
+                </li>
+            </ul>
+        </div>
+    </div>      
+    <footer class="foot">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>Email: sokeipirimmacdonald@gmail.com</p>
+            <p>Phone: </p>
+            <p>Address: Nigeria</p>
+            <p>Follow Us:</p>
+            <p>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
