@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Used to present a similar page on mobile devices-->
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="glm.jpg">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/dc0929a05e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" title="Home" id="logo">GlamorÉvents</a>
+        <div class="search_bar">
+            <input type="text" id="search_text" name="searchb" placeholder="Search...">
+            <a href="#" class="search_icon"> <i class="fa-solid fa-magnifying-glass" onclick="showSearchBar()"></i> </a> 
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="showServices()">Services <i class="fa-solid fa-chevron-down" id="chevron_icon"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="wedding.html">Weddings</a>
+                        <a href="corporate.html">Corporate Events</a>
+                        <a href="private.html">Private Parties</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signIn.html" class="nav-link">Sign In</a></li>
+            <li><a href="join.html" class="nav-link">Join</a></li>
+            <li class="hamburger-icon" id="menu_icon" onclick="closeSideBar()">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+        </ul>
+        <div class="hamburger-icon_2" id="menu_icon_2" onclick="showSideBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>      
+    <hr>
+    <div class="search_bar2">
+        <input type="text" id="search_text2" name="searchb" placeholder="Search...">
+        <a href="#" class="search_icon2"> <i class="fa-solid fa-magnifying-glass"></i></a> 
+    </div>
+    <main class="signup_container">
+        <h1>Sign Up</h1>
+        <form id="signup_form">
+            <div class="form_group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form_group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form_group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <a href="" class="signup_button">Sign Up</a>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+      </main>
+    <footer class="foot">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>Email: sokeipirimmacdonald@gmail.com</p>
+            <p>Phone: </p>
+            <p>Address: Nigeria</p>
+            <p>Follow Us:</p>
+            <p>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="javaS.js"></script>
+</body>
+</html>
