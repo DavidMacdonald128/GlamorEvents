@@ -271,7 +271,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin: 150px 0 150px 0;
+    margin: 150px 0 0 0;
     padding: 20px;
 }
 .index_body3 img{
@@ -299,7 +299,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin: 150px 0 150px 0;
+    margin: 100px 0 0 0;
     padding: 20px;
 }
 .index_body4 img{
@@ -326,7 +326,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin: 150px 0 150px 0;
+    margin: 100px 0 100px 0;
     padding: 20px;
 }
 .index_body5 img{
