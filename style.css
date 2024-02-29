@@ -877,6 +877,7 @@ footer.foot a:hover {
     }
     .search_bar2{
         display: none;
+        z-index: 999;
     }
     #search_text{display: none;}
     #logo {
