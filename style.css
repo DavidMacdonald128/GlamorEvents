@@ -968,4 +968,7 @@ footer.foot a:hover {
         margin-bottom: 60px;
         font-size: 20px;
     }
+    #faq_ans2, #faq_ans3{
+        height: 120px;
+    }
 }
